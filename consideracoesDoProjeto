@@ -1,0 +1,56 @@
+Desafio API
+Aluna: Tanisia Pack Fernandes
+
+Observações sobre os testes realizados:
+
+
+1) Verificar se API está online: Teste rodou conforme esperado.
+
+2) Garantir o schema do retorno da lista de reservas: Teste rodou conforme esperado.
+
+3) Garantir o schema do retorno de uma reserva específica: Teste rodou conforme esperado.
+
+4)Excluir um reserva com sucesso: Teste rodou conforme esperado.
+
+5) Listar IDs das reservas: Teste rodou conforme esperado.
+
+6) Listar uma reserva específica: Teste rodou conforme esperado.
+
+7) Listar IDs de reservas utilizando o filtro firstname: Teste rodou conforme esperado.
+
+8) Listar IDs de reservas utilizando o filtro lastname: Teste rodou conforme esperado.
+
+9) Listar IDs de reservas utilizando o filtro checkin: Teste rodou conforme esperado.
+
+10) Listar IDs de reservas utilizando o filtro checkout: Teste rodou conforme esperado.
+
+11) Listar IDs de reservas utilizando o filtro checkout and checkout: Não retornou conforme esperado, pois não é possível chamar o mesmo parâmetro duas vezes, retornando o erro 500
+   (informado uma data qualquer como parâmetro para testar junto ao checkout).
+
+12) Listar IDs de reservas utilizando o filtro name, checkin and checkout date: Teste rodou conforme esperado.
+
+13) Criar uma nova reserva: Teste rodou conforme esperado.
+
+14) Alterar uma reserva usando o token: Teste rodou conforme esperado.
+
+15) Alterar uma reserva usando o Basic auth: Teste rodou conforme esperado.
+
+16) Tentar excluir um reserva que não existe: Ao ser informado um número de reserva inexistente, o sistema retorna o erro 405.
+
+17) Tentar excluir uma reserva sem autorização: Ao ser informado um número de token inválido, o sistema retorna o erro 403.
+
+18) Visualizar erro de servidor 500 quando enviar filtro mal formatado: Ao informar um filtro inválido, o sistema retorna o erro 500.
+
+19) Validar retorno 500 quando o payload da reserva estiver inválido: Ao informar  um Payload inválido, o sistema retorna o erro 500.
+
+20) Validar a criação de mais de um livro em sequencia: Teste rodou conforme esperado.
+
+21) Criar uma reserva enviando mais parâmetros no payload da reserva: Teste roda, conseguindo passar o parâmetro, porém quando o Booking é criado, ele não retorna o parâmetro criado.
+
+22) Validar retorno 418 quando o header Accept for inválido: Não consegui obter o retorno esperado nesse teste.
+
+23) Tentar alterar uma reserva quando o token não for enviado: Retorna o erro 403, pois não foi informado nenhum token como parâmetro.
+
+24) Tentar alterar uma reserva quando o token enviado for inválido: Retorna o erro 403, pois foi enviado uma String no lugar do token.
+
+25) Tentar alterar uma reserva que não existe: Ao informar um id de reserv inexistente, retorna o erro 405.
